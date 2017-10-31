@@ -9,6 +9,12 @@ until travel == "go home"
     distance += 1
     energy += 5
     puts "Distance from home is #{distance}km. Your energy is #{energy}"
+  elsif travel == "eat"
+    energy += 2
+    puts "Ate a meal. Your energy is #{energy}"
+  elsif travel == "rest"
+    energy += 2
+    puts "Got rested. Your energy is #{energy}"
   elsif travel == "run" && energy > 0
     distance += 5
     energy -= 5
